@@ -1,4 +1,4 @@
-@0    = ~I hope you're aware that I'm not here by choice, Bhaalspawn.  I am here to discern your intentions, and your motives.  If I had my way, I would still be in the Anauroch Desert, traveling where I wanted to.~ [LK#I153]
+@0    = ~I hope you're aware that I'm not here by choice, Bhaalspawn.  I am here to discern your intentions, and your motives.  If I had my way, I would still be in the Anauroch Desert, travelling where I wanted to.~ [LK#I153]
 @1    = ~I have no choice in this, much like yourself.  I just thought I should make that clear.~ [LK#I154]
 @2    = ~I understand.~
 @3    = ~Regardless, you will live by MY rules, Monk.  I accepted you into the party on the premise that you would be helpful, and if I find that you are hindering me in any way, you will be gone like a shot.~
@@ -31,7 +31,7 @@
 @30   = ~You know nothing of me.  Whoever this person is, they know nothing of me.  You...no.  Just leave me alone.  I don't care, stay, leave, whatever you wish...just leave me alone.~
 @31   = ~But who IS this person, who is so interested in me, Iylos?~
 @32   = ~Whatever you wish, <CHARNAME>.~
-@33   = ~It would depend upon the circumstances, I suspect.  If you were evil, I would be forced to take action, but since you assure me this is not the case, I will reserve judgment...for now.~
+@33   = ~It would depend upon the circumstances, I suspect.  If you were evil, I would be forced to take action, but since you assure me this is not the case, I will reserve judgement...for now.~
 @34   = ~The circumstances?  What possible circumstances could there *be*?~
 @35   = ~Fine.~
 @36   = ~Well, I am evil.  Deal with it.~
@@ -57,7 +57,7 @@
 @56   = ~You should be glad that Balthazar is the one I am aiding, rather than another who might use anything and everything against you.~
 @57   = ~Many, <CHARNAME>...many.~
 @58   = ~<CHARNAME>, you cannot fool me into leaving.  I am not some stupid coward, intent on betrayal at the first opportunity.~
-@59   = ~Quite alright.  Shall we go?~
+@59   = ~Quite all right.  Shall we go?~
 @60   = ~I...no.  Let us go.~
 @61   = ~I do believe some people call it that, yes.  Regardless, I *will* follow my orders and watch you.~
 @62   = ~Leave this party, Iylos.  Even if you do dog my steps, I will not have to deal with *you.*~
@@ -147,12 +147,12 @@
 @146  = ~Viconia, I am warning you.~
 @147  = ~Nobody but Balthazar tells me what to do, elg'caress.  Speak to me like that again, and you will wish you had never opened your mouth.~
 @148  = ~So the pathetic wael of a man has backbone.  Good.  Do not waste our time with further pathetic displays, Iylos, as they serve no purpose but to waste our time.  We have far better things to do than watch you weep.~
-@149  = ~Iylos?  Are...are you alright?~
+@149  = ~Iylos?  Are...are you all right?~
 @150  = ~I'm sorry.  I'm so sorry.~
 @151  = ~He had to die.  Whether he had died now or not doesn't matter, he would have killed himself anyway.~
 @152  = ~Viconia is right.  Stop this snivelling so we can leave.~
 @153  = ~Stop this snivelling, Iylos, so we can leave.  The sooner we're out of here, the better.~
-@154  = ~I- no, of course I'm not alright!  I will get my revenge.  His revenge.  Our revenge.  Melissan will pay for the evils she has done, if it is the last thing I do.~
+@154  = ~I- no, of course I'm not all right!  I will get my revenge.  His revenge.  Our revenge.  Melissan will pay for the evils she has done, if it is the last thing I do.~
 @155  = ~It was not your fault.  I will get my revenge.  His revenge.  Our revenge.  Melissan will pay for the evils she has done, if it is the last thing I do.~
 @156  = ~I will get my revenge.  His revenge.  Our revenge.  Melissan will pay for the evils she has done, if it is the last thing I do.~
 @157  = ~Ah, Amkethran...wonderful, dusty, dry Amkethran.  Let us get our business over with, <CHARNAME>, that we may leave soon.~ [LK#IBLN]
@@ -183,7 +183,7 @@
 @182  = ~Perhaps you should listen to the frantic pleas of the peasants, Soldier, and take them to see this Gromnir.  Surely you can see they are suffering?~
 @183  = ~It is not my duty to look after the peasants, Goodman, just to defend the walls.  Good day to you.~
 @184  = ~They almost hunger for death...it must truly be a terrible way to live.  Or, not, as the case may be.~
-@185  = ~Yours is the life unfulfilling, bloodling!  Attack, my childer!  We shall not go down without a fight!~
+@185  = ~Yours is the life fulfilling, bloodling!  Attack, my childer!  We shall not go down without a fight!~
 @186  = ~She is mad, <CHARNAME>--this woman has no compassion, no empathy.  I have had dealings with her before, and I know nothing good can come from anything she suggests.  Be wary of what she says!~
 @187  = ~I told you, <CHARNAME>--prepare yourself!  Nyalee, you stupid, foolish woman-~
 @188  = ~I remembers you...you were the one who tried to take Nyalee's home, weren't you?!  You lied, but you got your all in the end, hee hee!~
