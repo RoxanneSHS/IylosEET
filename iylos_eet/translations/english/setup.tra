@@ -11,7 +11,7 @@ It seems it can also cast Sanctuary, though when you try to do so it doesn't wor
     
 This amulet is only wearable by Iylos.~
 @5    = ~Belt of Storage~
-@6    = ~This belt consists of a series of small compartments which can hold several small items each, more often than not potions, scrolls, notes and the like. This particular belt has a curious design of a scorpion stitched into its front in gold thread. Iylos mentions that within those threads lies a minor enchantment which enlargens the compartments a little to allow slightly bigger objects to fit in, and though there is a limit to the amount of items it can hold, he has never completely filled it.~
+@6    = ~This belt consists of a series of small compartments which can hold several small items each, more often than not potions, scrolls, notes and the like. This particular belt has a curious design of a scorpion stitched into its front in gold thread. Iylos mentions that within those threads lies a minor enchantment which enlarges the compartments a little to allow slightly bigger objects to fit in, and though there is a limit to the amount of items it can hold, he has never completely filled it.~
 @7    = ~Boots of the Nomad~
 @8    = ~The Boots of the Nomad were created by an old Enchanter who found travelling to be far too wearing, and after several disastrous failures with transportation spells decided to look into creating boots which would provide comfort and speed to the wearer. He succeeded, and eventually sold his design to several young Elven enchanters who proceeded to expand upon his idea and refine the techniques used to enchant the boots. Footwear such as these are often found on the feet of nomadic wanderers and sages.
 
@@ -26,12 +26,12 @@ These boots were enchanted specially for Iylos, and as such are only usable by h
 @10   = ~Bracers of the Coiling Serpent~
 @11   = ~The Bracers of the Coiling Serpent are a seemingly powerless pair of bracers with a lifelike snake made of silver wrapped around its length. They are said to have been created by a monk who was a little too obsessed with the power being a monk gave him, eventually creating these bracers to try to pull himself back towards the balance for fear he would be lost.
     
-Unfortunately, the Bracers did not help and he fell by the wayside, eventually succombing to disorder and chaos. He was killed in a ritualistic ceremony by several of his previous friends, and it is said he was wearing these bracers when he died.
+Unfortunately, the Bracers did not help and he fell by the wayside, eventually succumbing to disorder and chaos. He was killed in a ritualistic ceremony by several of his previous friends, and it is said he was wearing these bracers when he died.
     
 Iylos tells you he acquired these bracers from a recluse in the desert, who he spent quite some time with. They give him speed and precision whilst fighting, helping to both attack and when necessary block the enemy's movements.~
 @12   = ~The Bracers of the Coiling Serpent are a seemingly powerless pair of bracers with a lifelike snake made of silver wrapped around its length. They are said to have been created by a monk who was a little too obsessed with the power being a monk gave him, eventually creating these bracers to try to pull himself back towards the balance for fear he would be lost.
     
-Unfortunately, the Bracers did not help and he fell to the wayside, eventually succombing to disorder and chaos. He was killed in a ritualistic ceremony by several of his previous friends, and it is said he was wearing these bracers when he died.
+Unfortunately, the Bracers did not help and he fell to the wayside, eventually succumbing to disorder and chaos. He was killed in a ritualistic ceremony by several of his previous friends, and it is said he was wearing these bracers when he died.
     
 Iylos tells you he acquired these bracers from a recluse in the desert, who he spent quite some time with. They give him speed and precision whilst fighting, helping to both attack and when necessary block the enemy's movements.~
 @13   = ~Cloak of the Deserts~
@@ -56,7 +56,7 @@ Aegis of the Deserts is only usable by Iylos.~
 @22   = ~Letter from Balthazar~
 @23   = ~When you ask about this letter, Iylos carefully deposits it back into his robe and tells you that it was the letter requesting his presence at Amkethran, and that it contains some few details about you and your companions, and a small note to him personally. If pressed, Iylos glares at you and says that it is none of your business.~
 @24   = ~Sandstone Ring~
-@25   = ~This smooth ring is warm to the touch, and gives out a faint magical aura. It was carved, Iylos says, from an ancient Netherese artifact found in the Anauroch Desert, and has myriad minor powers. It is simple yet elegant, a golden coloured, thin band which fits Iylos' finger perfectly - but try as you might, it refuses to come off.
+@25   = ~This smooth ring is warm to the touch, and gives out a faint magical aura. It was carved, Iylos says, from an ancient Netherese artefact found in the Anauroch Desert, and has myriad minor powers. It is simple yet elegant, a golden coloured, thin band which fits Iylos' finger perfectly - but try as you might, it refuses to come off.
     
 It gives Iylos the power of free movement, allowing him to travel safely through a Webbed or vine-filled area without any problems. Its most powerful ability gives Iylos immunity to Time Stop spells, allowing him to act and react to the caster of the spell.~
 @26   = ~Monastic Robe~
@@ -85,7 +85,7 @@ Against his will, he adds darkly, before turning away and continuing his contemp
 @47   = ~Ah, the city... at least we aren't in Athkatla, or the city of Neverwinter... bah.~ [LK#I17]
 @48   = ~The archetypal dungeon consists of hallway after hallway of dank, cold darkness. If this is as such, you will find yourself in a position where you might not be able to keep me from leaving you to your fate. (Shiver)~ [LK#I18]
 @49   = ~(yawn) Another day on the road... another day in which I might be killed - or be the killer.~ [LK#I19]
-@50   = ~Nights in Anauroch were colder than here, but for some reason I feel it more acutely... perhaps I've become accostomed to the heat. No matter.~ [LK#I20]
+@50   = ~Nights in Anauroch were colder than here, but for some reason I feel it more acutely... perhaps I've become accustomed to the heat. No matter.~ [LK#I20]
 @51   = ~I am here by command - and I am commanded to do as you ask.~ [LK#I21]
 @52   = ~Yes?~ [LK#I22]
 @53   = ~I don't need this...~ [LK#I23]
