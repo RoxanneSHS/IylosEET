@@ -23,7 +23,7 @@ LANGUAGE ~English~
 // --------------------------------------------
 
 BEGIN @1
-  REQUIRE_PREDICATE GAME_IS ~eet~ @88
+  REQUIRE_PREDICATE GAME_IS ~ng2ee eet~ @88
 
     
     // Adds custom IsValidForPartyDialogue state used throughout Iylos
