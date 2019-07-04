@@ -46,8 +46,8 @@ BEGIN @1
 
     
     // Ascension crossmod dialogue
-    ACTION_IF FILE_EXISTS_IN_GAME ~irenic2.dlg~ THEN BEGIN
-      COMPILE ~iylos_eet/dialogue/crossmod/ascension.d~
+    ACTION_IF (FILE_CONTAINS ~WeiDU.log~ ~ASCENSION\.tp2. #[0-9]+ #10 ~) BEGIN
+         COMPILE ~iylos_eet/dialogue/crossmod/ascension.d~
     END
     
     
