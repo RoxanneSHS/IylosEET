@@ -17,7 +17,7 @@ style='font-size:12.0pt;font-family:"Times New Roman",serif'>NPC mod for ToB and
 style='font-size:12.0pt;font-family:"Times New Roman",serif'>A mod originally written by K'aeloree.<br>
 Iylos can join your party during your visit to Saradush only. <br>
 
- Mirdan is from Amkethran, a Desert City near the border of Tethyr. He is a very serious man at first glance, but a second shows that he has an ironic, slightly twisted sense of humour which does not exactly fit with ones general idea of a monk. He fights offensively and aggressively, seeking out the weakness of an opponent before taking them out as quickly and efficiently as possible, and possesses a somewhat sour disposition.
+Iylos Mirdan is from Amkethran, a Desert City near the border of Tethyr. He is a very serious man at first glance, but a second shows that he has an ironic, slightly twisted sense of humour which does not exactly fit with ones general idea of a monk. He fights offensively and aggressively, seeking out the weakness of an opponent before taking them out as quickly and efficiently as possible, and possesses a somewhat sour disposition.
 
 He has never had a family, and was trained as a monk in the Monastery in Amkethran. He is totally devoted to the Monastery, and to a lesser extent Balthazar.
 
