@@ -5,414 +5,414 @@ APPEND LK#IYLJ
 // Trust Dialogues (2)
 // -------------------------------------
 // PC Dialogue 1
-  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",1) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD1
+  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",1) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD1
     SAY @0  = @1
-    ++ @2 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD1_1
-    ++ @3 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD1_2
-    ++ @4 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) SetGlobal("LK#IylosPCD1","GLOBAL",2)~ + PCD1_3
-    ++ @5 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD1_4
-    ++ @6 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD1_5
+    ++ @2 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_1
+    ++ @3 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_2
+    ++ @4 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) SetGlobal("LK#IylosEPCD1","GLOBAL",2)~ + EPCD1_3
+    ++ @5 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_4
+    ++ @6 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_5
   END
 
-  IF ~~ PCD1_1
+  IF ~~ EPCD1_1
     SAY @7
-    ++ @8 + PCD1_11
-    ++ @9 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_12
-    ++ @10 + PCD1_13
-    ++ @11 + PCD1_14
-    ++ @12 + PCD1_16
+    ++ @8 + EPCD1_11
+    ++ @9 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_12
+    ++ @10 + EPCD1_13
+    ++ @11 + EPCD1_14
+    ++ @12 + EPCD1_16
   END
 
-  IF ~~ PCD1_2
+  IF ~~ EPCD1_2
     SAY @13 = @14
-    ++ @8 + PCD1_11
-    ++ @9 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_12
-    ++ @10 + PCD1_13
-    ++ @11 + PCD1_14
-    ++ @12 + PCD1_16
+    ++ @8 + EPCD1_11
+    ++ @9 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_12
+    ++ @10 + EPCD1_13
+    ++ @11 + EPCD1_14
+    ++ @12 + EPCD1_16
   END
 
-  IF ~~ PCD1_3
+  IF ~~ EPCD1_3
     SAY @15
-    ++ @16 + PCD1_31
-    ++ @17 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD1_32
-    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + PCD1_32
-    ++ @19 + PCD1_32
+    ++ @16 + EPCD1_31
+    ++ @17 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD1_32
+    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + EPCD1_32
+    ++ @19 + EPCD1_32
   END
 
-  IF ~~ PCD1_4
+  IF ~~ EPCD1_4
     SAY @20
-    ++ @21 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_41
-    ++ @22 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD1_42
-    ++ @19 + PCD1_12
+    ++ @21 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_41
+    ++ @22 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD1_42
+    ++ @19 + EPCD1_12
   END
 
-  IF ~~ PCD1_5
+  IF ~~ EPCD1_5
     SAY @23
-    ++ @21 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_41
-    ++ @22 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD1_42
-    ++ @24 + PCD1_43
-    ++ @19 + PCD1_12
+    ++ @21 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_41
+    ++ @22 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD1_42
+    ++ @24 + EPCD1_43
+    ++ @19 + EPCD1_12
   END
 
-  IF ~~ PCD1_11
+  IF ~~ EPCD1_11
     SAY @25
-    ++ @26 + PCD1_111
-    ++ @27 + PCD1_112
-    ++ @28 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD1_113
-    ++ @29 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD1_114
+    ++ @26 + EPCD1_111
+    ++ @27 + EPCD1_112
+    ++ @28 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD1_113
+    ++ @29 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD1_114
     ++ @30 EXIT
-    ++ @31 + PCD1_114
+    ++ @31 + EPCD1_114
   END
 
-  IF ~~ PCD1_12
+  IF ~~ EPCD1_12
     SAY @32
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_13
+  IF ~~ EPCD1_13
     SAY @33
-    ++ @34 + PCD1_131
-    ++ @35 + PCD1_12
-    ++ @36 + PCD1_132
-    ++ @17 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD1_32
+    ++ @34 + EPCD1_131
+    ++ @35 + EPCD1_12
+    ++ @36 + EPCD1_132
+    ++ @17 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD1_32
   END
 
-  IF ~~ PCD1_14
+  IF ~~ EPCD1_14
     SAY @37
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_16
+  IF ~~ EPCD1_16
     SAY @38
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_31
+  IF ~~ EPCD1_31
     SAY @39 = @40 = @41
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_32
+  IF ~~ EPCD1_32
     SAY @42
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_41
+  IF ~~ EPCD1_41
     SAY @43
-    ++ @44 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_411
-    ++ @45 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD1_132
-    ++ @46 + PCD1_412
-    ++ @47 + PCD1_132
-    ++ @48 + PCD1_413
+    ++ @44 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_411
+    ++ @45 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD1_132
+    ++ @46 + EPCD1_412
+    ++ @47 + EPCD1_132
+    ++ @48 + EPCD1_413
   END
 
-  IF ~~ PCD1_42
+  IF ~~ EPCD1_42
     SAY @49
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_43
+  IF ~~ EPCD1_43
     SAY @50
-    ++ @16 + PCD1_31
-    ++ @17 + PCD1_32
-    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + PCD1_32
-    ++ @19 + PCD1_32
+    ++ @16 + EPCD1_31
+    ++ @17 + EPCD1_32
+    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + EPCD1_32
+    ++ @19 + EPCD1_32
   END
 
-  IF ~~ PCD1_111
+  IF ~~ EPCD1_111
     SAY @51 = @52
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_112
+  IF ~~ EPCD1_112
     SAY @53
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_113
+  IF ~~ EPCD1_113
     SAY @54
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_114
+  IF ~~ EPCD1_114
     SAY @55 = @56
-    ++ @16 + PCD1_31
-    ++ @17 + PCD1_32
-    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + PCD1_32
-    ++ @19 + PCD1_32
+    ++ @16 + EPCD1_31
+    ++ @17 + EPCD1_32
+    ++ @18 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~ + EPCD1_32
+    ++ @19 + EPCD1_32
   END
 
-  IF ~~ PCD1_131
+  IF ~~ EPCD1_131
     SAY @57
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_132
+  IF ~~ EPCD1_132
     SAY @58
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_152
+  IF ~~ EPCD1_152
     SAY @59 = @60
     IF ~~ EXIT
   END
 
-  IF ~~ PCD1_411
+  IF ~~ EPCD1_411
     SAY @61
-    ++ @35 + PCD1_132
-    ++ @62 + PCD1_412
-    ++ @63 + PCD1_413
+    ++ @35 + EPCD1_132
+    ++ @62 + EPCD1_412
+    ++ @63 + EPCD1_413
   END
 
-  IF ~~ PCD1_412
+  IF ~~ EPCD1_412
     SAY @64
     IF ~~ DO ~LeaveParty() SetGlobal("LK#IylosJoinedParty","GLOBAL",0) SetGlobal("LK#IylosLeftUnhappy","GLOBAL",1) EscapeAreaMove("AR5500",958,1567,5)~ EXIT
   END
 
-  IF ~~ PCD1_413
+  IF ~~ EPCD1_413
     SAY @64
     IF ~~ DO ~LeaveParty() SetGlobal("LK#IylosJoinedParty","GLOBAL",0) SetGlobal("LK#IylosLeftUnhappy","GLOBAL",1) EscapeAreaMove("AR5500",958,1567,5)~ EXIT
   END
 
 
 // 2nd PC Dialogue
-  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",3) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD2
+  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",3) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD2
     SAY @65
-    ++ @66 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD2_1
-    ++ @67 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD2_2
-    ++ @68 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD2_3
-    ++ @69 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD2_4
-    ++ @70 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD2_5
+    ++ @66 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD2_1
+    ++ @67 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD2_2
+    ++ @68 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD2_3
+    ++ @69 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD2_4
+    ++ @70 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD2_5
   END
 
-  IF ~~ PCD2_1
+  IF ~~ EPCD2_1
     SAY @71
-    ++ @72 + PCD2_11
-    ++ @73 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_12
-    ++ @74 + PCD2_12
-    ++ @75 + PCD2_13
-    ++ @76 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_13
+    ++ @72 + EPCD2_11
+    ++ @73 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_12
+    ++ @74 + EPCD2_12
+    ++ @75 + EPCD2_13
+    ++ @76 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_13
   END
 
-  IF ~~ PCD2_2
+  IF ~~ EPCD2_2
     SAY @77
-    ++ @78 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_21
-    ++ @79 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_22
-    ++ @80 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_23
+    ++ @78 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_21
+    ++ @79 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_22
+    ++ @80 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_23
   END
 
-  IF ~~ PCD2_3
+  IF ~~ EPCD2_3
     SAY @81
-    ++ @82 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_31
-    ++ @83 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_32
-    ++ @84 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_33
-    ++ @85 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_13
+    ++ @82 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_31
+    ++ @83 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_32
+    ++ @84 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_33
+    ++ @85 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_13
   END
 
-  IF ~~ PCD2_4
+  IF ~~ EPCD2_4
     SAY @86
-    ++ @87 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_41
-    ++ @88 + PCD2_42
-    ++ @89 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_41
+    ++ @87 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_41
+    ++ @88 + EPCD2_42
+    ++ @89 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_41
   END
 
-  IF ~~ PCD2_5
+  IF ~~ EPCD2_5
     SAY @90
-    ++ @72 + PCD2_11
-    ++ @73 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_12
-    ++ @74 + PCD2_12
-    ++ @75 + PCD2_13
-    ++ @76 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_13
-    ++ @91 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_12
+    ++ @72 + EPCD2_11
+    ++ @73 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_12
+    ++ @74 + EPCD2_12
+    ++ @75 + EPCD2_13
+    ++ @76 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_13
+    ++ @91 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_12
   END
 
-  IF ~~ PCD2_11
+  IF ~~ EPCD2_11
     SAY @92
-    ++ @93 + PCD2_13
+    ++ @93 + EPCD2_13
     ++ @94 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  EXIT
-    ++ @95 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_12
-    ++ @91 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_12
+    ++ @95 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_12
+    ++ @91 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_12
   END
 
-  IF ~~ PCD2_12
+  IF ~~ EPCD2_12
     SAY @96
     ++ @97 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ EXIT
     ++ @98 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  EXIT
-    ++ @99 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_121
+    ++ @99 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_121
     ++ @100 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ EXIT
   END
 
-  IF ~~ PCD2_13
+  IF ~~ EPCD2_13
     SAY @101
     ++ @97 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ EXIT
     ++ @98 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  EXIT
-    ++ @99 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_121
+    ++ @99 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_121
     ++ @100 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ EXIT
-    ++ @102 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_131
+    ++ @102 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_131
   END
 
-  IF ~~ PCD2_21
+  IF ~~ EPCD2_21
     SAY @103
-    ++ @104 + PCD2_211
-    ++ @105 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_23
-    ++ @106 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_23
+    ++ @104 + EPCD2_211
+    ++ @105 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_23
+    ++ @106 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_23
     ++ @100 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ EXIT
 
   END
 
-  IF ~~ PCD2_22
+  IF ~~ EPCD2_22
     SAY @107 = @108
-    ++ @109 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_221
-    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_222
-    ++ @111 + PCD2_223
-    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_224
+    ++ @109 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_221
+    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_222
+    ++ @111 + EPCD2_223
+    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_224
   END
 
-  IF ~~ PCD2_23
+  IF ~~ EPCD2_23
     SAY @113 = @114
-    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_222
-    ++ @111 + PCD2_223
-    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_224
-    ++ @115 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD2_231
-    ++ @116 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD2_232
+    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_222
+    ++ @111 + EPCD2_223
+    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_224
+    ++ @115 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD2_231
+    ++ @116 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD2_232
   END
 
-  IF ~~ PCD2_31
+  IF ~~ EPCD2_31
     SAY @117
-    ++ @118 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_311
-    ++ @119 + PCD2_312
-    ++ @120 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_223
-    ++ @121 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_313
+    ++ @118 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_311
+    ++ @119 + EPCD2_312
+    ++ @120 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_223
+    ++ @121 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_313
   END
 
-  IF ~~ PCD2_32
+  IF ~~ EPCD2_32
     SAY @122
-    ++ @118 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_311
-    ++ @119 + PCD2_312
-    ++ @120 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_223
-    ++ @121 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD2_313
+    ++ @118 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_311
+    ++ @119 + EPCD2_312
+    ++ @120 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_223
+    ++ @121 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD2_313
   END
 
-  IF ~~ PCD2_33
+  IF ~~ EPCD2_33
     SAY @123
-    ++ @124 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_331
-    ++ @125 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_332
-    ++ @126 + PCD2_331
-    ++ @127 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_333
+    ++ @124 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_331
+    ++ @125 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_332
+    ++ @126 + EPCD2_331
+    ++ @127 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_333
   END
 
-  IF ~~ PCD2_41
+  IF ~~ EPCD2_41
     SAY @128
-    ++ @129 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_341
-    ++ @130 + PCD2_342
-    ++ @131 + PCD2_342
-    ++ @132 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_342
-    ++ @133 + PCD2_342
+    ++ @129 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_341
+    ++ @130 + EPCD2_342
+    ++ @131 + EPCD2_342
+    ++ @132 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_342
+    ++ @133 + EPCD2_342
   END
 
-  IF ~~ PCD2_42
+  IF ~~ EPCD2_42
     SAY @134
-    ++ @129 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_341
-    ++ @130 + PCD2_342
-    ++ @131 + PCD2_342
-    ++ @132 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_342
-    ++ @133 + PCD2_342
+    ++ @129 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_341
+    ++ @130 + EPCD2_342
+    ++ @131 + EPCD2_342
+    ++ @132 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_342
+    ++ @133 + EPCD2_342
   END
 
-  IF ~~ PCD2_121
+  IF ~~ EPCD2_121
     SAY @135
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_131
+  IF ~~ EPCD2_131
     SAY @136
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_211
+  IF ~~ EPCD2_211
     SAY @137 = @114
-    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + PCD2_222
-    ++ @111 + PCD2_223
-    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_224
-    ++ @138 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD2_231
-    ++ @116 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD2_232
+    ++ @110 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~  + EPCD2_222
+    ++ @111 + EPCD2_223
+    ++ @112 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_224
+    ++ @138 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD2_231
+    ++ @116 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD2_232
   END
 
-  IF ~~ PCD2_221
+  IF ~~ EPCD2_221
     SAY @139
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_222
+  IF ~~ EPCD2_222
     SAY @140
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_223
+  IF ~~ EPCD2_223
     SAY @141
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_224
+  IF ~~ EPCD2_224
     SAY @142
     ++ @143 EXIT
     ++ @144 EXIT
   END
 
-  IF ~~ PCD2_231
+  IF ~~ EPCD2_231
     SAY @145
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_232
+  IF ~~ EPCD2_232
     SAY @146
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_311
+  IF ~~ EPCD2_311
     SAY @135
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_312
+  IF ~~ EPCD2_312
     SAY @147
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_313
+  IF ~~ EPCD2_313
     SAY @148
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_331
+  IF ~~ EPCD2_331
     SAY @149
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_332
+  IF ~~ EPCD2_332
     SAY @150
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_333
+  IF ~~ EPCD2_333
     SAY @151
-    ++ @152 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD2_3331
+    ++ @152 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD2_3331
     ++ @153 EXIT
     ++ @154 EXIT
   END
 
-  IF ~~ PCD2_341
+  IF ~~ EPCD2_341
     SAY @155
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_342
+  IF ~~ EPCD2_342
     SAY @156
     IF ~~ EXIT
   END
 
-  IF ~~ PCD2_3331
+  IF ~~ EPCD2_3331
     SAY @157
     IF ~~ EXIT
   END
@@ -421,98 +421,98 @@ APPEND LK#IYLJ
 // -------------------------------------
 // Friendship Dialogues (4)
 // -------------------------------------
-  IF  WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",5) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD3
+  IF  WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",5) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD3
     SAY @158
-    ++ @159 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD3_0
-    ++ @160 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD3_0
-    ++ @161 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD3_0
+    ++ @159 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD3_0
+    ++ @160 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD3_0
+    ++ @161 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD3_0
   END
 
-  IF ~~ PCD3_0
+  IF ~~ EPCD3_0
     SAY @162  = @163
-    ++ @164 + PCD3_1
-    ++ @165 + PCD3_1
-    ++ @166 + PCD3_1
-    ++ @167 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_2
+    ++ @164 + EPCD3_1
+    ++ @165 + EPCD3_1
+    ++ @166 + EPCD3_1
+    ++ @167 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_2
   END
 
-  IF ~~ PCD3_1
+  IF ~~ EPCD3_1
     SAY @168 = @169 = @170
-    ++ @171 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_11
-    ++ @172 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_11
-    ++ @173 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_13
-    ++ @174 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD3_12
-    ++ @175 + PCD3_12
+    ++ @171 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_11
+    ++ @172 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_11
+    ++ @173 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_13
+    ++ @174 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD3_12
+    ++ @175 + EPCD3_12
   END
 
-  IF ~~ PCD3_2
+  IF ~~ EPCD3_2
     SAY @176 = @169 = @177
-    ++ @171 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_11
-    ++ @172 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_11
-    ++ @173 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_13
-    ++ @174 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD3_12
+    ++ @171 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_11
+    ++ @172 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_11
+    ++ @173 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_13
+    ++ @174 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD3_12
   END
 
-  IF ~~ PCD3_11
+  IF ~~ EPCD3_11
     SAY @178
     ++ @179 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) SetGlobal("BLK#IylosMeditation","GLOBAL",1)~ EXIT
     ++ @180 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ EXIT
-    ++ @181 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_111
-    ++ @182 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_112
+    ++ @181 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_111
+    ++ @182 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_112
   END
 
-  IF ~~ PCD3_12
+  IF ~~ EPCD3_12
     SAY @183
-    ++ @184 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD3_112
-    ++ @185 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD3_121
-    ++ @186 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_122
+    ++ @184 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD3_112
+    ++ @185 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD3_121
+    ++ @186 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_122
   END
 
-  IF ~~ PCD3_13
+  IF ~~ EPCD3_13
     SAY @187
-    ++ @188 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_122
-    ++ @189 + PCD3_112
-    ++ @190 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_1121
-    ++ @185 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD3_122
+    ++ @188 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_122
+    ++ @189 + EPCD3_112
+    ++ @190 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_1121
+    ++ @185 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD3_122
   END
 
-  IF ~~ PCD3_111
+  IF ~~ EPCD3_111
     SAY @191
     IF ~~ EXIT
   END
 
-  IF ~~ PCD3_112
+  IF ~~ EPCD3_112
     SAY @192
-    ++ @193 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_1121
-    ++ @194 DO ~SetGlobal("BLK#IylosMeditation","GLOBAL",1)~ + PCD3_122
-    ++ @195 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_1122
-    ++ @196 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_1123
+    ++ @193 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_1121
+    ++ @194 DO ~SetGlobal("BLK#IylosMeditation","GLOBAL",1)~ + EPCD3_122
+    ++ @195 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_1122
+    ++ @196 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_1123
   END
 
-  IF ~~ PCD3_121
+  IF ~~ EPCD3_121
     SAY @197
-    ++ @193 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_1121
-    ++ @194 + PCD3_122
-    ++ @195 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD3_1122
-    ++ @196 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD3_1123
+    ++ @193 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_1121
+    ++ @194 + EPCD3_122
+    ++ @195 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD3_1122
+    ++ @196 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD3_1123
   END
 
-  IF ~~ PCD3_122
+  IF ~~ EPCD3_122
     SAY @198
     IF ~~ EXIT
   END
 
-  IF ~~ PCD3_1121
+  IF ~~ EPCD3_1121
     SAY @76
     IF ~~ EXIT
   END
 
-  IF ~~ PCD3_1122
+  IF ~~ EPCD3_1122
     SAY @199
     IF ~~ EXIT
   END
 
-  IF ~~ PCD3_1123
+  IF ~~ EPCD3_1123
     SAY @200
     IF ~~ EXIT
   END
@@ -520,314 +520,314 @@ APPEND LK#IYLJ
 
 
 // 4th PC Dialogue (Friendship)
-  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",7) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD4
+  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",7) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD4
     SAY @201
-    ++ @202 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD4_1
-    ++ @203 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD4_2
-    ++ @204 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD4_1
+    ++ @202 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD4_1
+    ++ @203 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD4_2
+    ++ @204 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD4_1
   END
 
-  IF ~~ PCD4_1
+  IF ~~ EPCD4_1
     SAY @205  = @206 = @207 = @208 = @209 = @210 = @211
-    ++ @212 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + PCD4_11
-    ++ @213 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + PCD4_12
-    ++ @214 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD4_13
-    ++ @215 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + PCD4_11
-    ++ @216 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD4_11
-    ++ @217 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + PCD4_13
+    ++ @212 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + EPCD4_11
+    ++ @213 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + EPCD4_12
+    ++ @214 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD4_13
+    ++ @215 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2) SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + EPCD4_11
+    ++ @216 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD4_11
+    ++ @217 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-2)~ + EPCD4_13
   END
 
-  IF ~~ PCD4_2
+  IF ~~ EPCD4_2
     SAY @218
-    ++ @219 + PCD4_1
-    ++ @220 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD4_1131
+    ++ @219 + EPCD4_1
+    ++ @220 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD4_1131
   END
 
-  IF ~~ PCD4_11
+  IF ~~ EPCD4_11
     SAY @221
-    ++ @222 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD4_111
-    ++ @223 + PCD4_112
-    ++ @224 DO ~SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + PCD4_113
-    ++ @225 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD4_114
+    ++ @222 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD4_111
+    ++ @223 + EPCD4_112
+    ++ @224 DO ~SetGlobal("LK#IylosMeditateAgain","GLOBAL",1)~ + EPCD4_113
+    ++ @225 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD4_114
   END
 
-  IF ~~ PCD4_12
+  IF ~~ EPCD4_12
     SAY @226
     IF ~~ EXIT
   END
 
-  IF ~~ PCD4_13
+  IF ~~ EPCD4_13
     SAY @227
     IF ~~ DO ~SetGlobal("LK#IylosAngryWithPC","GLOBAL",1)~ EXIT
   END
 
-  IF ~~ PCD4_111
+  IF ~~ EPCD4_111
     SAY @228
     ++ @229 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ EXIT
-    ++ @230 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD4_1111
+    ++ @230 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD4_1111
     ++ @231 EXIT
   END
 
-  IF ~~ PCD4_112
+  IF ~~ EPCD4_112
     SAY @228
     IF ~~ EXIT
   END
 
-  IF ~~ PCD4_113
+  IF ~~ EPCD4_113
     SAY @232
     ++ @233 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ EXIT
-    ++ @234 + PCD4_1131
+    ++ @234 + EPCD4_1131
     ++ @235 EXIT
-    ++ @236 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD4_1131
+    ++ @236 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD4_1131
   END
 
-  IF ~~ PCD4_114
+  IF ~~ EPCD4_114
     SAY @237
     ++ @233 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ EXIT
-    ++ @234 + PCD4_1131
+    ++ @234 + EPCD4_1131
     ++ @235 EXIT
-    ++ @236 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCD4_1131
+    ++ @236 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCD4_1131
   END
 
-  IF ~~ PCD4_1111
+  IF ~~ EPCD4_1111
     SAY @238
     IF ~~ EXIT
   END
 
-  IF ~~ PCD4_1131
+  IF ~~ EPCD4_1131
     SAY @239
-    ++ @240 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD4_11311
-    ++ @189 DO ~SetGlobal("BLK#IylosNoMeditation","GLOBAL",1)~ + PCD4_11312
+    ++ @240 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD4_11311
+    ++ @189 DO ~SetGlobal("BLK#IylosNoMeditation","GLOBAL",1)~ + EPCD4_11312
   END
 
 
-  IF ~~ PCD4_11311
+  IF ~~ EPCD4_11311
     SAY @241
-    ++ @242 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + PCD4_1
-    ++ @243 + PCD4_11312
+    ++ @242 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",1)~ + EPCD4_1
+    ++ @243 + EPCD4_11312
   END
 
-  IF ~~ PCD4_11312
+  IF ~~ EPCD4_11312
     SAY @244
     IF ~~ EXIT
   END
   
 
 // 5th PC Dialogue (Friendship)
-  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",9) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD5
+  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",9) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD5
     SAY @245  = @246  = @247 = @248 = @249
-    ++ @250 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD5_1
-    ++ @251 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD5_2
-    ++ @252 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD5_3
-    ++ @253 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCD5_4
+    ++ @250 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD5_1
+    ++ @251 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD5_2
+    ++ @252 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD5_3
+    ++ @253 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD5_4
   END
 
-  IF ~~ PCD5_1
+  IF ~~ EPCD5_1
     SAY @254
     IF ~~ EXIT
   END
 
-  IF ~~ PCD5_2
+  IF ~~ EPCD5_2
     SAY @255
-    ++ @256 + PCD5_21
-    ++ @257 + PCD5_22
-    ++ @258 + PCD5_23
-    ++ @259 + PCD5_21
+    ++ @256 + EPCD5_21
+    ++ @257 + EPCD5_22
+    ++ @258 + EPCD5_23
+    ++ @259 + EPCD5_21
   END
 
-  IF ~~ PCD5_3
+  IF ~~ EPCD5_3
     SAY @260
     IF ~~ DO ~LeaveParty() SetGlobal("LK#IylosJoinedParty","GLOBAL",0) SetGlobal("LK#IylosLeftGood","GLOBAL",1) EscapeAreaMove("AR5500",958,1567,5)~ EXIT
   END
 
-  IF ~~ PCD5_4
+  IF ~~ EPCD5_4
     SAY @261
     ++ @262 EXIT
-    ++ @263 + PCD5_41
-    ++ @264 + PCD5_42
-    ++ @265 + PCD5_3
+    ++ @263 + EPCD5_41
+    ++ @264 + EPCD5_42
+    ++ @265 + EPCD5_3
   END
 
-  IF ~~ PCD5_21
+  IF ~~ EPCD5_21
     SAY @266
-    ++ @267 + PCD5_41
-    ++ @268 + PCD5_41
-    ++ @269 + PCD5_3
+    ++ @267 + EPCD5_41
+    ++ @268 + EPCD5_41
+    ++ @269 + EPCD5_3
   END
 
-  IF ~~ PCD5_22
+  IF ~~ EPCD5_22
     SAY @270
     IF ~~ EXIT
   END
 
-  IF ~~ PCD5_23
+  IF ~~ EPCD5_23
     SAY @271
     IF ~~ EXIT
   END
 
-  IF ~~ PCD5_41
+  IF ~~ EPCD5_41
     SAY @272
     IF ~~ EXIT
   END
 
-  IF ~~ PCD5_42
+  IF ~~ EPCD5_42
     SAY @273
     IF ~~ DO ~SetGlobal("LK#IylosFriendsDecisionUncertain","GLOBAL",1)~ EXIT
   END
 
 
 // 6th PC Dialogue (Friendship)
-  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",11) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ PCD6
+  IF WEIGHT #-2 ~Global("LK#IylosTalks","GLOBAL",11) RealGlobalTimerExpired("LK#IylosTalksTimer","GLOBAL")~ EPCD6
     SAY @274 = @275
-    ++ @276 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD6_1
-    ++ @277 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD6_2
-    ++ @278 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD6_3
-    ++ @279 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + PCD6_4
+    ++ @276 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD6_1
+    ++ @277 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD6_2
+    ++ @278 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD6_3
+    ++ @279 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1)~ + EPCD6_4
   END
 
-  IF ~~ PCD6_1
+  IF ~~ EPCD6_1
     SAY @280 = @281
-    ++ @282 + PCD6_11
-    ++ @283 + PCD6_11
-    ++ @284 + PCD6_11
-    ++ @285 + PCD6_11
+    ++ @282 + EPCD6_11
+    ++ @283 + EPCD6_11
+    ++ @284 + EPCD6_11
+    ++ @285 + EPCD6_11
   END
 
-  IF ~~ PCD6_2
+  IF ~~ EPCD6_2
     SAY @286 = @287
-    ++ @288 + PCD6_21
-    ++ @289 + PCD6_22
+    ++ @288 + EPCD6_21
+    ++ @289 + EPCD6_22
     ++ @154 EXIT
-    ++ @290 + PCD6_23
+    ++ @290 + EPCD6_23
   END
 
-  IF  ~~ PCD6_3
+  IF  ~~ EPCD6_3
     SAY @291
-    ++ @292 + PCD6_31
+    ++ @292 + EPCD6_31
     ++ @293 EXIT
     ++ @153 EXIT
-    ++ @294 + PCD6_32
+    ++ @294 + EPCD6_32
   END
 
-  IF ~~ PCD6_4
+  IF ~~ EPCD6_4
     SAY @295 = @287
-    ++ @288 + PCD6_21
-    ++ @289 + PCD6_22
+    ++ @288 + EPCD6_21
+    ++ @289 + EPCD6_22
     ++ @154 EXIT
-    ++ @290 + PCD6_23
+    ++ @290 + EPCD6_23
   END
 
-  IF ~~ PCD6_11
+  IF ~~ EPCD6_11
     SAY @296 = @297
-    ++ @298 + PCD6_111
-    ++ @299 + PCD6_112
-    ++ @300 + PCD6_113
-    ++ @301 + PCD6_114
-    ++ @302 + PCD6_115
-    ++ @303 + PCD6_114
+    ++ @298 + EPCD6_111
+    ++ @299 + EPCD6_112
+    ++ @300 + EPCD6_113
+    ++ @301 + EPCD6_114
+    ++ @302 + EPCD6_115
+    ++ @303 + EPCD6_114
   END
 
-  IF ~~ PCD6_21
+  IF ~~ EPCD6_21
     SAY @304
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_22
+  IF ~~ EPCD6_22
     SAY @305 = @306
-    ++ @307 + PCD6_221
-    ++ @308 + PCD6_221
-    ++ @309 + PCD6_222
+    ++ @307 + EPCD6_221
+    ++ @308 + EPCD6_221
+    ++ @309 + EPCD6_222
   END
 
-  IF ~~ PCD6_23
+  IF ~~ EPCD6_23
     SAY @310 = @297
-    ++ @298 + PCD6_111
-    ++ @299 + PCD6_112
-    ++ @300 + PCD6_113
-    ++ @301 + PCD6_114
-    ++ @302 + PCD6_115
-    ++ @303 + PCD6_114
+    ++ @298 + EPCD6_111
+    ++ @299 + EPCD6_112
+    ++ @300 + EPCD6_113
+    ++ @301 + EPCD6_114
+    ++ @302 + EPCD6_115
+    ++ @303 + EPCD6_114
   END
 
-  IF ~~ PCD6_31
+  IF ~~ EPCD6_31
     SAY @311
-    ++ @312 + PCD6_311
-    ++ @313 + PCD6_311
-    ++ @314 + PCD6_312
+    ++ @312 + EPCD6_311
+    ++ @313 + EPCD6_311
+    ++ @314 + EPCD6_312
   END
 
-  IF ~~ PCD6_32
+  IF ~~ EPCD6_32
     SAY @315
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_111
+  IF ~~ EPCD6_111
     SAY @316 = @317
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_112
+  IF ~~ EPCD6_112
     SAY @318
-    ++ @319 + PCD6_1121
-    ++ @320 + PCD6_114
-    ++ @321 + PCD6_1122
-    ++ @322 + PCD6_1123
+    ++ @319 + EPCD6_1121
+    ++ @320 + EPCD6_114
+    ++ @321 + EPCD6_1122
+    ++ @322 + EPCD6_1123
   END
 
-  IF ~~ PCD6_113
+  IF ~~ EPCD6_113
     SAY @323
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_114
+  IF ~~ EPCD6_114
     SAY @324
-    ++ @319 + PCD6_1121
-    ++ @325 + PCD6_1141
-    ++ @321 + PCD6_1122
-    ++ @322 + PCD6_1123
+    ++ @319 + EPCD6_1121
+    ++ @325 + EPCD6_1141
+    ++ @321 + EPCD6_1122
+    ++ @322 + EPCD6_1123
   END
 
-  IF ~~ PCD6_115
+  IF ~~ EPCD6_115
     SAY @326
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_221
+  IF ~~ EPCD6_221
     SAY @327
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_222
+  IF ~~ EPCD6_222
     SAY @328
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_311
+  IF ~~ EPCD6_311
     SAY @329
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_312
+  IF ~~ EPCD6_312
     SAY @330
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_1121
+  IF ~~ EPCD6_1121
     SAY @331
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_1122
+  IF ~~ EPCD6_1122
     SAY @332
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_1123
+  IF ~~ EPCD6_1123
     SAY @333
     IF ~~ EXIT
   END
 
-  IF ~~ PCD6_1141
+  IF ~~ EPCD6_1141
     SAY @334
     IF ~~ EXIT
   END
@@ -836,61 +836,61 @@ APPEND LK#IYLJ
 // -------------------------------------
 // Iylos Dislike Dialogue (1)
 // -------------------------------------
-  IF WEIGHT #-2 ~Global("LK#IylosDislikeTalks","GLOBAL",1) RealGlobalTimerExpired("LK#IylosDislikeTalksTimer","GLOBAL")~ PCDIS
+  IF WEIGHT #-2 ~Global("LK#IylosDislikeTalks","GLOBAL",1) RealGlobalTimerExpired("LK#IylosDislikeTalksTimer","GLOBAL")~ EPCDIS
     SAY @335
-    ++ @336 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCDIS_1
-    ++ @337 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCDIS_2
-    ++ @338 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCDIS_2
-    ++ @339 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + PCDIS_3
+    ++ @336 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCDIS_1
+    ++ @337 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCDIS_2
+    ++ @338 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCDIS_2
+    ++ @339 DO ~IncrementGlobal("LK#IylosDislikeTalks","GLOBAL",1) RealSetGlobalTimer("LK#IylosDislikeTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCDIS_3
   END
 
-  IF ~~ PCDIS_1
+  IF ~~ EPCDIS_1
     SAY @340
-    ++ @341 + PCDIS_11
-    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCDIS_12
-    ++ @343 + PCDIS_13
-    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + PCDIS_14
+    ++ @341 + EPCDIS_11
+    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCDIS_12
+    ++ @343 + EPCDIS_13
+    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + EPCDIS_14
   END
 
-  IF ~~ PCDIS_2
+  IF ~~ EPCDIS_2
     SAY @345
-    ++ @341 + PCDIS_11
-    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCDIS_12
-    ++ @343 + PCDIS_13
-    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + PCDIS_14
-    ++ @346DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~  + PCDIS_21
+    ++ @341 + EPCDIS_11
+    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCDIS_12
+    ++ @343 + EPCDIS_13
+    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + EPCDIS_14
+    ++ @346DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~  + EPCDIS_21
   END
 
-  IF ~~ PCDIS_3
+  IF ~~ EPCDIS_3
     SAY @347
-    ++ @341 + PCDIS_11
-    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCDIS_12
-    ++ @343 + PCDIS_13
-    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + PCDIS_14
-    ++ @348 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + PCDIS_21
+    ++ @341 + EPCDIS_11
+    ++ @342 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCDIS_12
+    ++ @343 + EPCDIS_13
+    ++ @344 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",2)~  + EPCDIS_14
+    ++ @348 DO ~IncrementGlobal("LK#IylosHappiness","GLOBAL",-1)~ + EPCDIS_21
   END
 
-  IF ~~ PCDIS_11
+  IF ~~ EPCDIS_11
     SAY @349
     IF ~~ EXIT
   END
 
-  IF ~~ PCDIS_12
+  IF ~~ EPCDIS_12
     SAY @350
     IF ~~ EXIT
   END
 
-  IF ~~ PCDIS_13
+  IF ~~ EPCDIS_13
     SAY @351
     IF ~~ EXIT
   END
 
-  IF ~~ PCDIS_14
+  IF ~~ EPCDIS_14
     SAY @352
     IF ~~ DO ~SetGlobal("LK#IylosProudOfBeingBhaalspawn","GLOBAL",1)~ EXIT
   END
 
-  IF ~~ PCDIS_21
+  IF ~~ EPCDIS_21
     SAY @353
     IF ~~ EXIT
   END

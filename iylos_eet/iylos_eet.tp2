@@ -4,11 +4,11 @@
 // Basics
 BACKUP ~iylos_eet/backup~
 //AUTHOR ~Liam Esler (K'aeloree) - kae@spellholdstudios.net~
-SUPPORT ~Roxanne - https://baldursextendedworld.com/Branched-EET-Updates-2/ or roxanne@baldursextendedworld.com~
+SUPPORT ~https://github.com/RoxanneSHS/IylosEET/issues~
 
 ASK_EVERY_COMPONENT
 // Version
-VERSION ~3.0~
+VERSION ~3.1~
 
 
 // Translations
@@ -25,7 +25,7 @@ LANGUAGE ~English~
 BEGIN @1
   REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @88
 
-    
+
     // Adds custom IsValidForPartyDialogue state used throughout Iylos
     APPEND ~STATE.IDS~ // adds custom IsValidForPartyDialogue state
       ~0x80101FEF CD_STATE_NOTVALID~
