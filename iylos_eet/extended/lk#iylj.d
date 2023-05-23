@@ -9,7 +9,7 @@ APPEND LK#IYLJ
     SAY @0  = @1
     ++ @2 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_1
     ++ @3 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_2
-    ++ @4 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) SetGlobal("LK#IylosEPCD1","GLOBAL",2)~ + EPCD1_3
+    ++ @4 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) SetGlobal("LK#IylosPCD1","GLOBAL",2)~ + EPCD1_3
     ++ @5 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",-1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_4
     ++ @6 DO ~IncrementGlobal("LK#IylosTalks","GLOBAL",1) IncrementGlobal("LK#IylosHappiness","GLOBAL",1) RealSetGlobalTimer("LK#IylosTalksTimer","GLOBAL",IYLOS_TIMER)~ + EPCD1_5
   END
